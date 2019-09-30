@@ -1,4 +1,9 @@
 language: java
 jdk:
-  - oraclejdk8
+  - openjdk8
+addons:
+  firefox: "latest"
+env:
+  global:
+    - MOZ_HEADLESS=1
 script: mvn test
